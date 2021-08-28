@@ -3,21 +3,21 @@ import Hero from "components/Hero";
 import History from 'components/History';
 import ProductList from "components/ProductList";
 
-interface Props{
+interface Props {
     namedVar: String[];
 }
 const Home = (props: Props) => {
     return (
-        <HeaderFooter pageTitle={`Ayo`} parent={`homepage`}>
+        <HeaderFooter pageTitle={`My Cake`} parent={`homepage`}>
+            <div id="hero"><br /><br /></div>
             <Hero />
 
-            <div id="history"><br/><br/></div>
-            <History historyContent={`Yo`}/>
+            <div id="history"><br /><br /></div>
+            <History historyContent={`Yo`} />
 
-            <div id="products"><br/><br/></div>
-            <ProductList parent={`main`} itemList={[]}/>
-            
-            <div>Ini CHildren bukan?</div>
+            <div id="products"><br /><br /></div>
+            <ProductList parent={`main`} itemList={[]} />
+
         </HeaderFooter>
     );
 }
