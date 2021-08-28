@@ -1,6 +1,6 @@
 
 interface Props {
-    key: number;
+    index: number;
     type: String;
     parent: String;
     title: String;
@@ -12,7 +12,7 @@ const ProductCard = (param: Props) => {
     if (type === 'desktop') {
         if (parent === 'main') {
             return (
-                <div className="col-12 col-md-4" key={`desktop-${key}`}>
+                <div className="col-12 col-xl-3 col-sm-6" key={`desktop-${key}`}>
                     <div className="card drop-shadow">
                         <img className="card-image" src="static/assets/product_choco_expresso_layer.jpeg" />
                         <div className="card-body">

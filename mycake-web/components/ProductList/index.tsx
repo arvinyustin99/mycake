@@ -10,22 +10,7 @@ interface Props {
 }
 
 const tempProps: ProductPreview[] = [
-    {
-        image: {
-            url: `static/assets/product_choco_expresso_layer.jpeg`
-        },
-        title: `Chocolate Expresso`,
-        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-        do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod.`
-    },
-    {
-        image: {
-            url: `static/assets/product_choco_expresso_layer.jpeg`
-        },
-        title: `Chocolate Expresso`,
-        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-        do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod.`
-    },
+    
     {
         image: {
             url: `static/assets/product_choco_expresso_layer.jpeg`
@@ -58,26 +43,26 @@ const ProductList = (param: Props) => {
         ? param
         : { itemList: tempProps };
 
-    const renderProductDesktop = itemList.map((item: ProductPreview, index: number) => {
+    const renderProductDesktop = itemList.map((item: ProductPreview, idx: number) => {
         return (
-            <>
+            <div key={idx}>
                 <ProductCard
-                    key={index}
+                    index={idx}
                     parent={parent}
                     type={`desktop`}
                     content={item.content}
                     title={item.title}
                 />
-            </>
+            </div>
 
         );
     });
 
-    const renderProductMobile = itemList.map((item: ProductPreview, index: number) => {
+    const renderProductMobile = itemList.map((item: ProductPreview, idx: number) => {
         return (
-            <div className="carousel-cell">
+            <div className="carousel-cell" key={idx}>
                 <ProductCard
-                    key={index}
+                    index={idx}
                     parent={parent}
                     type={`mobile`}
                     content={item.content}
