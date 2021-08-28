@@ -144,6 +144,10 @@ p {
     justify-content: center;
 }
 
+.navbar-img {
+    height: 65px;
+}
+
 .nav-link {
     margin-top: 0px;
 }
@@ -1170,7 +1174,7 @@ hr {
         height: 70px;
     }
 
-    .navbar-brand img {
+    .navbar-img {
         width: 45px;
         margin-right: 5px;
     }
