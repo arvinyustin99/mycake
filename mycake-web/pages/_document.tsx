@@ -1,9 +1,9 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 export default class DocumentContainer extends Document {
   render() {
     return (
-      <html>
+      <Html>
         <Head>
           <link rel="stylesheet" href="/css/bootstrap.min.css" />
           <link rel="stylesheet" href="/css/bootstrap.css" />
@@ -26,7 +26,7 @@ export default class DocumentContainer extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
