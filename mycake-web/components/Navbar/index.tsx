@@ -9,38 +9,47 @@ interface Props {
 
 const openNav = () => {
     document.getElementById("navbar-menu").style.display = "block";
-    document.getElementById("menu-overlay-black").style.display = "block";
+    //document.getElementById("menu-overlay-black").style.display = "block";
 }
 
 const closeNav = () => {
     document.getElementById("navbar-menu").style.display = "none";
-    document.getElementById("menu-overlay-black").style.display = "none";
+    //document.getElementById("menu-overlay-black").style.display = "none";
 }
 
 const Navbar = (param: Props) => {
-
+    const { active } = param;
+    const navbarList = [
+        'homepage',
+        'menu',
+        'news'
+    ]
     return (
         <>
             <div id="navbar-menu" className="overlay">
                 <div className="overlay-close-container">
-                    <a href="javascript:void(0)" className="closebtn" onClick={ closeNav }>&times;</a>
+                    <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
                 </div>
                 <hr />
                 <div className="overlay-content">
-                    <div className="overlay-item" id="active-menu">
-                        <a href="#hero" onClick={ closeNav }>BERANDA</a>
+                    <div className="overlay-item" id={active === `homepage` ? `active-menu` : ``}>
+                        <Link href={active === `homepage` ? `#` : `/`}>
+                            <a href="#hero" onClick={closeNav}>BERANDA</a>
+                        </Link>
                     </div>
                     <div className="overlay-item">
-                        <a href="#history" onClick={ closeNav }>TENTANG KAMI</a>
+                        <a href="#history" onClick={closeNav}>TENTANG KAMI {active}</a>
+                    </div>
+                    <div className="overlay-item" id={active === `menu` ? `active-menu` : ``}>
+                        <Link href={`/menu`}>
+                            <a onClick={closeNav}>MENU</a>
+                        </Link>
+                    </div>
+                    <div className="overlay-item" id={active === `news` ? `active-menu` : ``}>
+                        <a href="blog.html" onClick={closeNav}>BERITA</a>
                     </div>
                     <div className="overlay-item">
-                        <a href="menu.html" onClick={ closeNav }>MENU</a>
-                    </div>
-                    <div className="overlay-item">
-                        <a href="blog.html" onClick={ closeNav }>BERITA</a>
-                    </div>
-                    <div className="overlay-item">
-                        <a href="#contacts" onClick={ closeNav }><button className="btn btn-outline-primary">HUBUNGI
+                        <a href="#contacts" onClick={closeNav}><button className="btn btn-outline-primary">HUBUNGI
                             KAMI</button></a>
                     </div>
                 </div>
@@ -49,29 +58,45 @@ const Navbar = (param: Props) => {
                 <div className="container">
                     <div className="row justify-content-between">
                         <div className="col-3 navbar-header">
+                            <Link href={active === `homepage` ? `#hero` : `/`}>
                             <a className="navbar-brand" href="#">
-                                <img src="static/assets/logo_no_label.png" style={{height: "65px;"}} />
+                                <img className={`navbar-img`} src="static/assets/logo_no_label.png"/>
                                 MyCake
                             </a>
+                            </Link>
                         </div>
 
                         <button className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
                             aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon" onClick={ openNav } />
+                            <span className="navbar-toggler-icon" onClick={openNav} />
                         </button>
 
                         <div className="col-lg-8 col-12 collapse navbar-collapse">
                             <ul className="navbar-nav">
-                                <li className="active"><a className="nav-link" href="#">BERANDA</a></li>
+                                <li className={active === `homepage` ? `active` : ``}>
+                                    <Link href={active === `homepage` ? `#` : `/`}>
+                                        <a className="nav-link" href="#">BERANDA</a>
+                                    </Link>
+                                </li>
                                 <li><a className="nav-link" href="#history">TENTANG KAMI</a></li>
-                                <li><a className="nav-link" href="menu.html">MENU</a></li>
-                                <li><a className="nav-link" href="blog.html">BERITA</a></li>
-                                <li><a href="#contacts"><button className="btn btn-outline-primary">HUBUNGI KAMI</button></a></li>
+                                <li className={active === `menu` ? `active` : ``}>
+                                    <Link href={active === `menu` ? `#` : `/menu`}>
+                                        <a className="nav-link" href="">MENU</a>
+                                    </Link>
+                                </li>
+                                <li className={active === `news` ? `active` : ``}>
+                                    <Link href={active === `news` ? `#` : `/news`}>
+                                        <a className="nav-link">BERITA</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <a href="#contacts"><button className="btn btn-outline-primary">HUBUNGI KAMI</button></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav >
         </>
     );
 }
