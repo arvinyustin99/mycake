@@ -166,12 +166,22 @@ p {
 
 .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary:visited {
     color: #E2B100 !important;
+    
     border-color: #E2B100;
     opacity: 1;
     font-size: 13px;
 }
+.btn-outline-primary:enabled:active {
+    background-color: #E28B00 !important;
+}
 
-.btn-outline-primary:hover {
+.btn-outline-primary:disabled .btn-outline-primary:disabled:hover{
+    color: #F0D87F !important;
+    border-color: #F0D87F;
+    background-color: #EEEEEE;
+}
+
+.btn-outline-primary:enabled:hover {
     background-color: #E2B100;
     color: white !important;
     border-color: #E2B100;
@@ -481,6 +491,12 @@ p {
 .blog-paragraph {
     font-size: 14px;
     color: #8E8E8E;
+}
+
+.blog-date {
+    font-weight: 900;
+    color: #343434;
+    font-size: 12px;
 }
 
 .blog-item-image img {
