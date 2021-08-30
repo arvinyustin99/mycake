@@ -1,3 +1,4 @@
+import { Image } from "types";
 
 interface Props {
     index: number;
@@ -5,18 +6,19 @@ interface Props {
     parent: String;
     title: String;
     content: String;
+    image?: Image;
 }
 
 const ProductCard = (param: Props) => {
-    const { key, parent, type, title, content } = param;
+    const { index, parent, type, title, content, image } = param;
     if (type === 'desktop') {
         if (parent === 'main') {
             return (
-                <div className="col-12 col-xl-3 col-sm-6" key={`desktop-${key}`}>
+                <div className="col-12 col-lg-3 col-sm-6" key={`desktop-${index}`}>
                     <div className="card drop-shadow">
-                        <img className="card-image" src="static/assets/product_choco_expresso_layer.jpeg" />
+                        <img className="card-image" src={`${image.url}`} />
                         <div className="card-body">
-                            <div className="about-item-title">{title} INI DESKTOP</div>
+                            <div className="about-item-title">{title}</div>
                             <p className="about-item-paragraph">
                                 {content}
                             </p>
@@ -24,13 +26,13 @@ const ProductCard = (param: Props) => {
                     </div>
                 </div>
             );
-        } else if (parent === 'products') {
+        } else if (parent === 'menu') {
             return (
-                <div className="col-12 col-sm-6 col-lg-3" key={`products-${key}`}>
+                <div className="col-12 col-sm-6 col-lg-3" key={`products-${index}`}>
                     <div className="card drop-shadow">
-                        <img className="card-image menu-card-image" src="static/assets/product_choco_expresso_layer.jpeg" />
+                        <img className="card-image menu-card-image" src={`${image.url}`} />
                         <div className="card-body">
-                            <div className="menu-item-title">{title} INI PRODUCTS</div>
+                            <div className="menu-item-title">{title}</div>
                             <p className="menu-item-paragraph">
                                 {content}
                             </p>
@@ -41,7 +43,7 @@ const ProductCard = (param: Props) => {
         }
     } else if (type === 'mobile') {
         return (
-            <div className="about-item-container drop-shadow" key={`mobile-${key}`}>
+            <div className="about-item-container drop-shadow" key={`mobile-${index}`}>
                 <img className="card-image" src="static/assets/product_choco_expresso_layer.jpeg" />
                 <div className="about-item-title">{title} INI MOBILE</div>
                 <p className="about-item-paragraph">
