@@ -4,12 +4,12 @@ import History from 'components/History';
 import ProductList from "components/ProductList";
 
 interface Props {
-    namedVar: String[];
+    namedVar: string[];
 }
 const Home = (props: Props) => {
     return (
         <HeaderFooter pageTitle={`My Cake`} parent={`homepage`}>
-            <div id="hero"><br /><br /></div>
+            <div id="hero"></div>
             <Hero />
 
             <div id="history"><br /><br /></div>
