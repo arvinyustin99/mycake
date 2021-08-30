@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Kost Kartini</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+
+    <link rel="stylesheet" href="node_modules/flickity/dist/flickity.css" media="screen">
+    <script src="node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <script src="js/script.js"></script>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="navbar-menu" class="overlay">
+        <div class="overlay-close-container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+        <hr/>
+        <div class="overlay-content">
+            <div class="overlay-item" id="active-menu">
+                <a href="#hero" onclick="closeNav()">BERANDA</a>
+            </div>
+            <div class="overlay-item">
+                <a href="#about" onclick="closeNav()">TENTANG KARTINI</a>
+            </div>
+            <div class="overlay-item">
+                <a href="#facilities" onclick="closeNav()">FASILITAS</a>
+            </div>
+            <div class="overlay-item">
+                <a href="#pricing" onclick="closeNav()">HARGA</a>
+            </div>
+            <div class="overlay-item">
+                <a href="blog.html" onclick="closeNav()">BLOG</a>
+            </div>
+            <div class="overlay-item">
+                <a href="#contacts" onclick="closeNav()"><button class="btn btn-outline-primary">HUBUNGI KAMI</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="menu-overlay-black"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top drop-shadow">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-3 navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/icons/logo.png" style="width: 45px;">
+                        KOST KARTINI
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" onclick="openNav()"></span>
+                </button>
+                
+                <div  class="col-lg-8 col-12 collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="active"><a class="nav-link" href="#">BERANDA</a></li>
+                        <li><a class="nav-link" href="#about">TENTANG KARTINI</a></li>
+                        <li><a class="nav-link" href="#facilities">FASILITAS</a></li>
+                        <li><a class="nav-link" href="#pricing">HARGA</a></li>
+                        <li><a class="nav-link" href="blog.html">BLOG</a></li>
+                        <li><a href="#contacts"><button class="btn btn-outline-primary">HUBUNGI KAMI</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="floating-button-container">
+        <button class="floating-button-desktop drop-shadow">
+            <img src="assets/icons/wa_icon.png">
+            Hubungi Kami via WhatsApp
+        </button>
+        <button class="floating-button-mobile drop-shadow">
+            <img src="assets/icons/wa_icon.png">
+        </button>
+    </div>
+
+    <div id="hero"></div>
+
+    <div class="hero">
+        <div class="img-gradient-black"></div>
+        <div class="title-container">
+            <img src="assets/icons/paintstroke-main-desktop.png">
+            <div class="centered">
+                <h1>Feels like home</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+        <img class="keriting-bottom" src="assets/icons/keriting-desktop.png">
+    </div>
+    
+    <div id="about"></div>
+
+    <div class="about">
+        <div class="about-background"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 title-container">
+                    <div class="label-section">TENTANG KARTINI</div>
+                    <img src="assets/icons/paintstroke-section-desktop.png">
+                    <div class="centered">
+                        <h2>Selamat Datang di Kost Kartini</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="about-desktop">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card drop-shadow">
+                            <div class="card-body" style="background-image: url('static/assets/product_choco_expresso_layer.jpeg')">
+                                <img src="assets/icons/broom.png" style="width: 69px;">
+                                <div class="about-item-title">Aman dan Bersih</div>
+                                <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card drop-shadow">
+                            <div class="card-body">
+                                <img src="assets/icons/maid.png" style="width: 69px;">
+                                <div class="about-item-title">Ibu Kost Selalu Sedia</div>
+                                <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card drop-shadow">
+                            <div class="card-body">
+                                <img src="assets/icons/map.png" style="width: 69px;">
+                                <div class="about-item-title">Lokasi Strategis</div>
+                                <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-mobile">
+                <div class="carousel" data-flickity='{ "draggable": true }'>
+                    <div class="carousel-cell">
+                        <div class="about-item-container drop-shadow" style="background-image: url('static/assets/product_blackforest.jpeg')">
+                            <img src="assets/icons/broom.png" style="width: 69px;">
+                            <div class="about-item-title">Aman dan Bersih</div>
+                            <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="about-item-container drop-shadow">
+                            <img src="assets/icons/maid.png" style="width: 69px;">
+                            <div class="about-item-title">Ibu Kost Selalu Sedia</div>
+                            <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="about-item-container drop-shadow">
+                            <img src="assets/icons/map.png" style="width: 69px;">
+                            <div class="about-item-title">Lokasi Strategis</div>
+                            <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="facilities"></div>
+
+    <div class="facilities container">
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Our Facilities</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="facility-item col-lg-12 col-sm-6 col-6">
+                        <img src="assets/icons/hands-and-gestures.png">
+                        Area cuci
+                    </div>
+                    <div class="facility-item col-lg-12 col-sm-6 col-6">
+                        <img src="assets/icons/chef.png">
+                        Dapur
+                    </div>
+                    <div class="facility-item col-lg-12 col-sm-6 col-6">
+                        <img src="assets/icons/furniture-and-household.png">
+                        Area jemuran
+                    </div>
+                    <div class="facility-item col-lg-12 col-sm-6 col-6">
+                        <img src="assets/icons/car.png">
+                        Parkiran
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12">
+                <div class="grid-item item-container drop-shadow" style="background-image: url(assets/images/tempat_cuci.jpg);">
+                    <!-- <img src="assets/images/tempat_cuci.jpg"> -->
+                </div>
+                <div class="grid-item item-container variant-1 drop-shadow" style="background-image: url(assets/images/jemuran.jpg);">
+                    <!-- <img src="assets/images/jemuran.jpg"> -->
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12">
+                <div class="grid-item item-container variant-2 drop-shadow" style="background-image: url(assets/images/dapur.jpg);">
+                    <!-- <img src="assets/images/dapur.jpg"> -->
+                </div>
+                <div class="grid-item item-container drop-shadow" style="background-image: url(assets/images/parkiran.jpg);">
+                    <!-- <img src="assets/images/parkiran.jpg"> -->
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="pricing"></div>
+
+    <div class="pricing">
+        <div class="pricing-header">
+            <div class="pricing-background img-gradient-yellow"></div>
+            <div class="pricing-title">PRICING</div>
+        </div>
+        <div class="container">
+            <div class="pricing-kamar row">
+                <div class="item-container col-md-6 col-sm-6 col-12">
+                    <div class="card drop-shadow">
+                        <div class="card-body">
+                            <img src="assets/images/kamar1.jpg">
+                            <div class="pricing-tipe-kamar">KAMAR MANDI DALAM</div>
+                            <div class="pricing-harga">Rp 1.500.000 / bulan</div>
+                            <div class="pricing-kamar-feature">
+                                - Dibayarkan per tahun<br/>
+                                - Lorem ipsum dolor sit amet<br/>
+                                - Lorem ipsum dolor sit amet<br/>
+                                - Lorem ipsum dolor sit amet<br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container col-md-6 col-sm-6 col-12">
+                    <div class="card drop-shadow">
+                        <div class="card-body">
+                            <img src="assets/images/kamar2.jpg">
+                            <div class="pricing-tipe-kamar">KAMAR MANDI LUAR</div>
+                            <div class="pricing-harga">Rp 1.000.000 / bulan</div>
+                            <div class="pricing-kamar-feature">
+                                - Dibayarkan per tahun<br/>
+                                - Lorem ipsum dolor sit amet<br/>
+                                - Lorem ipsum dolor sit amet<br/>
+                                - Lorem ipsum dolor sit amet<br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item-container col-md-4 col-sm-4 col-12">
+                    <div class="promo-item drop-shadow">
+                        <div class="promo-content">
+                            <div class="img-gradient-darkyellow"></div>
+                            <img src="assets/icons/paintstroke-promo-desktop.png" width="70%">
+                            <div class="centered">
+                                <p>REFERAL AND GET</p>
+                                <h2>50% OFF</h2>
+                                <p class="promo-syarat">* Berlaku hingga akhir 2020 dan hanya untuk penghuni kost. Berlaku untuk 1 bulan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container col-md-4 col-sm-4 col-12">
+                    <div class="promo-item drop-shadow">
+                        <div class="promo-content">
+                            <div class="img-gradient-darkyellow"></div>
+                            <img src="assets/icons/paintstroke-promo-desktop.png" width="70%">
+                            <div class="centered">
+                                <p>REFERAL AND GET UP TO</p>
+                                <h2>Rp. 500.000</h2>
+                                <p class="promo-syarat">* Berlaku hingga akhir 2020 dan hanya untuk non penghuni kost.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container col-md-4 col-sm-4 col-12">
+                    <div class="promo-item drop-shadow">
+                        <div class="promo-content">
+                            <div class="img-gradient-darkyellow"></div>
+                            <img src="assets/icons/paintstroke-promo-desktop.png" width="70%">
+                            <div class="centered">
+                                <p>PEMBAYARAN 1 THN ++</p>
+                                <h2>1 month free</h2>
+                                <p class="promo-syarat">* Berlaku hingga akhir 2020 dan hanya untuk  penghuni kost.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="contacts"></div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <h2>Hubungi Ibu Kost Yuk!</h2>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <div id="foto-ibu-kost" class="drop-shadow"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=jalan%20puyuh%20bintaro&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">divi discount</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <div class="contact-container drop-shadow">
+                        <div class="contact-data">
+                            <div id="contact-phrase-1">Yuk kenalan dengan Bu Kost.</div>
+                            <div id="contact-phrase-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                            <div class="row contacts">
+                                <div class="col-6">
+                                    <div class="contact-label">ALAMAT</div>
+                                    <div class="contact-info">
+                                        Jl. Puyuh Bintaro, 
+                                        Tangerang Selatan
+                                        Lorem Ipsum
+                                        12333
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="contact-label">PHONE NUMBER</div>
+                                    <div class="contact-info">+62 111-1111-1111</div>
+                                    <div class="contact-sosmed">
+                                        <a href="#">
+                                            <img src="assets/icons/wa_icon.png" width="45px" height="45px">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/icons/insta-icon.png" width="45px" height="45px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="credits">
+                    <div>
+                        © Copyright 2020. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+

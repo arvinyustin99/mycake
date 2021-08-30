@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>MyCake</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+
+    <link rel="stylesheet" href="node_modules/flickity/dist/flickity.css" media="screen">
+    <script src="node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <script src="js/script.js"></script>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="navbar-menu" class="overlay">
+        <div class="overlay-close-container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+        <hr />
+        <div class="overlay-content">
+            <div class="overlay-item" id="active-menu">
+                <a href="#hero" onclick="closeNav()">BERANDA</a>
+            </div>
+            <div class="overlay-item">
+                <a href="#history" onclick="closeNav()">TENTANG KAMI</a>
+            </div>
+            <div class="overlay-item">
+                <a href="menu.html" onclick="closeNav()">MENU</a>
+            </div>
+            <div class="overlay-item">
+                <a href="blog.html" onclick="closeNav()">BERITA</a>
+            </div>
+            <div class="overlay-item">
+                <a href="#contacts" onclick="closeNav()"><button class="btn btn-outline-primary">HUBUNGI
+                        KAMI</button></a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top drop-shadow">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-3 navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="static/assets/logo_no_label.png" style="height: 65px;">
+                        MyCake
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" onclick="openNav()"></span>
+                </button>
+
+                <div class="col-lg-8 col-12 collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="active"><a class="nav-link" href="#">BERANDA</a></li>
+                        <li><a class="nav-link" href="#history">TENTANG KAMI</a></li>
+                        <li><a class="nav-link" href="menu.html">MENU</a></li>
+                        <li><a class="nav-link" href="blog.html">BERITA</a></li>
+                        <li><a href="#contacts"><button class="btn btn-outline-primary">HUBUNGI KAMI</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="hero"></div>
+
+    <div class="hero_init">
+        <div class="img-gradient-black"></div>
+        <div class="title-container">
+            <div class="row">
+                <div class="col-xl-10 col-lg-8 col-md-10 col-12 centered">
+                    <h1>My Cake, hometown signature desserts</h1>
+                    <p>Tidak hanya sekadar oleh-oleh, berjuta rasa dan kreativitas dalam sebuah piring.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="history"><br/><br/></div>
+
+    <div class="history container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <h2>Tentang Kami</h2>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4">
+                <div class="row">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 col-md-8">
+                <div class="row">
+                    <div class="grid-item drop-shadow col-lg-5 col-md-5 col-sm-6"
+                        style="background-image: url('static/assets/about_old_shop.jpg');"></div>
+                    <div class="grid-item drop-shadow col-lg-5 col-md-5 col-sm-6"
+                        style="background-image: url('static/assets/about_new_shop.jpg');"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="products"></div>
+    <div class="products">
+        <!-- <div class="about-background"></div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 title-container">
+                    <h2>Produk kami</h2>
+                    <a href="products.html">
+                        <p>See more</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="about-desktop">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card drop-shadow card-menu">
+                            <img class="card-image menu-card-image" src="static/assets/product_choco_expresso_layer.jpeg">
+                            <div class="card-body">
+                                <div class="about-item-title">Chocolate Expresso</div>
+                                <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card drop-shadow">
+                            <img class="card-image" src="static/assets/product_blackforest.jpeg">
+                            <div class="card-body">
+                                <div class="about-item-title">Blackforest Bar</div>
+                                <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card drop-shadow">
+                            <img class="card-image" src="static/assets/product_choco_sour_cream_bundt_cake.jpg">
+                            <div class="card-body">
+                                <div class="about-item-title">Chocolate Sour Cream Bundt</div>
+                                <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card drop-shadow">
+                            <img class="card-image" src="static/assets/product_tiramisu.jpg">
+                            <div class="card-body">
+                                <div class="about-item-title">Tiramisu Bar</div>
+                                <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-mobile">
+                <div class="carousel" data-flickity='{ "draggable": true }'>
+                    <div class="carousel-cell">
+                        <div class="about-item-container drop-shadow">
+                            <img class="card-image" src="static/assets/product_choco_expresso_layer.jpeg">
+                            <div class="about-item-title">Chocolate Expresso</div>
+                            <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="about-item-container drop-shadow">
+                            <img class="card-image" src="static/assets/product_blackforest.jpeg">
+                            <div class="about-item-title">Blackforest Bar</div>
+                            <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="about-item-container drop-shadow">
+                            <img class="card-image" src="static/assets/product_choco_sour_cream_bundt_cake.jpg">
+                            <div class="about-item-title">Chocolate Sour Cream Bundt</div>
+                            <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="about-item-container drop-shadow">
+                            <img class="card-image" src="static/assets/product_tiramisu.jpg">
+                            <div class="about-item-title">Tiramisu Bar</div>
+                            <p class="about-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut consectetur adipiscing elit, sed do eiusmod </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="blogs"></div>
+
+    <!-- Alamat dan telp -->
+    <div id="contacts"></div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 title-container">
+                    <h2>Kunjungi kami</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-detail-item col-lg-4 col-md-4 col-sm-4 col-12">
+                    <h3>Alamat</h3>
+                    Jln. Sisingamangaraja XI No.12/243, Medan, Sumatera Utara
+                </div>
+                <div class="footer-detail-item col-lg-4 col-md-4 col-sm-4 col-12">
+                    <h3>Telepon</h3>
+                    +62 61 459091
+                </div>
+                <div class="footer-detail-item col-lg-4 col-md-4 col-sm-4 col-12">
+                    <h3>Jam buka</h3>
+                    <p>
+                        Senin s/d Jumat:    08.00 - 18.00<br/>
+                        Sabtu, Minggu:      09.00 - 16.00
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href="https://goo.gl/maps/yoU81fTvx7ba4Qb4A">
+                        <button class="btn btn-outline-info" type="button">
+                            <img class="footer-img-icon" src="static/assets/icon_google_map.png">
+                            Kunjungi kami di Google Maps
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="credits">
+                    <div>
+                        © Copyright 2020. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Lower Navbar -->
+</body>
+
+</html>
