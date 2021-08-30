@@ -33,23 +33,27 @@ const Navbar = (param: Props) => {
                 <hr />
                 <div className="overlay-content">
                     <div className="overlay-item" id={active === `homepage` ? `active-menu` : ``}>
-                        <Link href={active === `homepage` ? `#` : `/`}>
+                        <Link href={active === `homepage` ? `#hero` : `/`}>
                             <a href="#hero" onClick={closeNav}>BERANDA</a>
                         </Link>
                     </div>
                     <div className="overlay-item">
-                        <a href="#history" onClick={closeNav}>TENTANG KAMI {active}</a>
+                        <Link href={active === `homepage` ? `#history` : `/#history`}>
+                            <a href="#history" onClick={closeNav}>TENTANG KAMI</a>
+                        </Link>
                     </div>
                     <div className="overlay-item" id={active === `menu` ? `active-menu` : ``}>
-                        <Link href={`/menu`}>
+                        <Link href={active === `menu` ? `#` : `/menu`}>
                             <a onClick={closeNav}>MENU</a>
                         </Link>
                     </div>
                     <div className="overlay-item" id={active === `news` ? `active-menu` : ``}>
-                        <a href="blog.html" onClick={closeNav}>BERITA</a>
+                        <Link href={active === `news` ? `#` : `/news`}>
+                            <a onClick={closeNav}>BERITA</a>
+                        </Link>
                     </div>
                     <div className="overlay-item">
-                        <a href="#contacts" onClick={closeNav}><button className="btn btn-outline-primary">HUBUNGI
+                        <a href="#contac                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ts" onClick={closeNav}><button className="btn btn-outline-primary">HUBUNGI
                             KAMI</button></a>
                     </div>
                 </div>
@@ -59,10 +63,10 @@ const Navbar = (param: Props) => {
                     <div className="row justify-content-between">
                         <div className="col-3 navbar-header">
                             <Link href={active === `homepage` ? `#hero` : `/`}>
-                            <a className="navbar-brand" href="#">
-                                <img className={`navbar-img`} src="static/assets/logo_no_label.png"/>
-                                MyCake
-                            </a>
+                                <a className="navbar-brand" href="#">
+                                    <img className={`navbar-img`} src="/static/assets/logo_no_label.png" />
+                                    MyCake
+                                </a>
                             </Link>
                         </div>
 
