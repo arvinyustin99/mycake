@@ -25,9 +25,9 @@ const History = ( param: Props ) => {
                 <div className="col-12 col-lg-8 col-md-8">
                     <div className="row">
                         <div className="grid-item drop-shadow col-lg-5 col-md-5 col-sm-6"
-                            style={{backgroundImage: `url('static/assets/about_old_shop.jpg');`}}/>
+                            style={{backgroundImage: `url('static/assets/about_old_shop.jpg')`}}/>
                         <div className="grid-item drop-shadow col-lg-5 col-md-5 col-sm-6"
-                            style={{backgroundImage: `url('static/assets/about_new_shop.jpg');`}}/>
+                            style={{backgroundImage: `url('static/assets/about_new_shop.jpg')`}}/>
                     </div>
                 </div>
             </div>

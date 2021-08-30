@@ -1,5 +1,3 @@
-import { ReactComponentElement } from "react";
-
 interface Props {
     title: String;
     description?: String;
@@ -16,9 +14,7 @@ const HalfHero = (param: Props) => {
                     <div className="row">
                         <div className="col-xl-10 col-lg-8 col-md-8 col-12 centered">
                             <h1>{title}</h1>
-                            <h1>Berita & Promo</h1>
                             <p>{description}</p>
-                            <p>Tidak hanya sekadar oleh-oleh, berjuta rasa dan kreativitas dalam sebuah piring.</p>
                         </div>
                     </div>
                 </div>
@@ -36,7 +32,7 @@ const HalfHero = (param: Props) => {
     return (
         <div className="half-hero">
             <div className="half-hero-background">
-                <RenderIfDescriptionExist/>
+                <RenderIfDescriptionExist />
             </div>
         </div>
     );
