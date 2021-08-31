@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "Contact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "text"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "open_hour": {
+      "type": "richtext"
+    },
+    "map_point": {
+      "type": "string"
+    }
+  }
+}
