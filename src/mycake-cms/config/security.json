@@ -1,0 +1,9 @@
+{
+	"xss": {
+		"enabled": "true"
+	},
+	"cors": {
+		"enabled": "false",
+		"origin": "http://localhost:1337"
+	}
+}
