@@ -1,5 +1,5 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "homepages",
   "info": {
     "name": "Homepage"
@@ -16,18 +16,6 @@
     },
     "heading": {
       "type": "string"
-    },
-    "hero": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
     }
   }
 }

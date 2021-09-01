@@ -1,8 +1,9 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "contacts",
   "info": {
-    "name": "Contact"
+    "name": "Contact",
+    "description": ""
   },
   "options": {
     "increments": true,

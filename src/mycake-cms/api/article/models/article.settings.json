@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "articles",
   "info": {
-    "name": "Product",
+    "name": "Article",
     "description": ""
   },
   "options": {
@@ -15,11 +15,8 @@
     "title": {
       "type": "string"
     },
-    "price": {
-      "type": "biginteger"
-    },
     "content": {
-      "type": "text"
+      "type": "richtext"
     },
     "image_link": {
       "type": "string"

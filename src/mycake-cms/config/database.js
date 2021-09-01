@@ -3,6 +3,7 @@ module.exports = ({ env }) => ({
   connections: {
     default: {
       connector: 'bookshelf',
+      /* Development Stage */
       settings: {
         client: 'postgres',
         host: env('DATABASE_HOST', '127.0.0.1'),
