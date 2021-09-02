@@ -28,7 +28,7 @@ const Navbar = (param: Props) => {
         <>
             <div id="navbar-menu" className="overlay">
                 <div className="overlay-close-container">
-                    <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
+                    <button type="button" className="closebtn" onClick={closeNav}>&times;</button>
                 </div>
                 <hr />
                 <div className="overlay-content">
