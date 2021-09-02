@@ -2,8 +2,9 @@ import Flickity from 'react-flickity-component';
 
 import Link from 'next/link';
 import ProductCard from 'components/ProductCard';
-import { ProductPreview, productPreviewStub } from 'types';
+import { ProductPreview } from 'types';
 import React from 'react';
+import { productPreviewStub } from 'config';
 
 interface Props {
     parent: String;
@@ -27,7 +28,7 @@ const ProductList = (param: Props) => {
                     type={`desktop`}
                     content={item.content}
                     title={item.title}
-                    image={item.image}
+                    image={item.image_link}
                 />
             </React.Fragment>
         );
