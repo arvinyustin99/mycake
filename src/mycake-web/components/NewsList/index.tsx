@@ -1,12 +1,10 @@
 import Link from "next/link";
-import { News, newsStub } from "types";
+import { News } from "types";
+import { newsStub } from 'config';
+import moment, {locale} from 'moment';
 
 interface Props {
     newsList: News[];
-}
-
-const NewsCard = () => {
-
 }
 
 const NewsList = (param: Props) => {
@@ -19,22 +17,24 @@ const NewsList = (param: Props) => {
             <div key={`news-card-${idx}`} className="col-lg-6 col-sm-6 col-12">
                 <div className="blog-item drop-shadow">
                     <Link href="#">
-                    <a>
-                        <div className="row">
-                            <div className="col-5">
-                                <img className="blog-item-image" src={`${item.image.url}`} alt={`${item.title}`} />
-                            </div>
-                            <div className="col-7">
-                                <div className="blog-item-content">
-                                    <div className="blog-title">{item.title}</div>
-                                    <div className="blog-date">12 Juni 2021</div>
-                                    <div className="blog-paragraph">
-                                        {item.content}
+                        <a>
+                            <div className="row">
+                                <div className="col-5">
+                                    <img className="blog-item-image" src={`${item.image_link}`} alt={`${item.title}`} />
+                                </div>
+                                <div className="col-7">
+                                    <div className="blog-item-content">
+                                        <div className="blog-title">{item.title}</div>
+                                        <div className="blog-date">
+                                            {moment(item.published_at).format('DD MMMM YYYY')}
+                                        </div>
+                                        <div className="blog-paragraph">
+                                            {item.content}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
                     </Link>
                 </div>
             </div>
