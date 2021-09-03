@@ -58,7 +58,7 @@ const Footer = (param: Props) => {
                             <Link href={addressLink && addressLink !== '' ? addressLink as string : temp.addressLink}>
                                 <a>
                                     <button className="btn btn-outline-info" type="button">
-                                        <img className="footer-img-icon" src={`static/assets/icon_google_map.png`} />
+                                        <img className="footer-img-icon" src={`/static/assets/icon_google_map.png`} />
                                         Kunjungi kami di Google Maps
                                     </button>
                                 </a>
