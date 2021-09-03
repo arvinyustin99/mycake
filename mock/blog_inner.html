@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>MyCake</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+
+    <link rel="stylesheet" href="node_modules/flickity/dist/flickity.css" media="screen">
+    <script src="node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <script src="js/script.js"></script>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+
+<body>
+</body>
+<div id="navbar-menu" class="overlay">
+    <div class="overlay-close-container">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+    <hr />
+    <div class="overlay-content">
+        <div class="overlay-item" id="active-menu">
+            <a href="#hero" onclick="closeNav()">BERANDA</a>
+        </div>
+        <div class="overlay-item">
+            <a href="#history" onclick="closeNav()">TENTANG KAMI</a>
+        </div>
+        <div class="overlay-item">
+            <a href="menu.html" onclick="closeNav()">MENU</a>
+        </div>
+        <div class="overlay-item">
+            <a href="blog.html" onclick="closeNav()">BERITA</a>
+        </div>
+        <div class="overlay-item">
+            <a href="#contacts" onclick="closeNav()"><button class="btn btn-outline-primary">HUBUNGI
+                    KAMI</button></a>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top drop-shadow">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-3 navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="static/assets/logo_no_label.png" style="height: 65px;">
+                    MyCake
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" onclick="openNav()"></span>
+            </button>
+
+            <div class="col-lg-8 col-12 collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="active"><a class="nav-link" href="#">BERANDA</a></li>
+                    <li><a class="nav-link" href="#history">TENTANG KAMI</a></li>
+                    <li><a class="nav-link" href="menu.html">MENU</a></li>
+                    <li><a class="nav-link" href="blog.html">BERITA</a></li>
+                    <li><a href="#contacts"><button class="btn btn-outline-primary">HUBUNGI KAMI</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="hero"></div>
+
+<div class="half-hero">
+    <div class="half-hero-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-12 centered">
+                    <h1>Promo untuk Mondayversary!</h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="blog-content-container">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-10 col-12">
+                <div class="blog-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <img class="blog-content-image" src="assets/images/dapur.jpg">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+
+                    <div class="share-button">
+                        <button class="drop-shadow" id="share-link">
+                            <img src="assets/icons/other.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="contacts"></div>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 title-container">
+                <h2>Kunjungi kami</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer-detail-item col-lg-4 col-md-4 col-sm-4 col-12">
+                <h3>Alamat</h3>
+                Jln. Sisingamangaraja XI No.12/243, Medan, Sumatera Utara
+            </div>
+            <div class="footer-detail-item col-lg-4 col-md-4 col-sm-4 col-12">
+                <h3>Telepon</h3>
+                +62 61 459091
+            </div>
+            <div class="footer-detail-item col-lg-4 col-md-4 col-sm-4 col-12">
+                <h3>Jam buka</h3>
+                <p>
+                    Senin s/d Jumat: 08.00 - 18.00<br />
+                    Sabtu, Minggu: 09.00 - 16.00
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a href="https://goo.gl/maps/yoU81fTvx7ba4Qb4A">
+                    <button class="btn btn-outline-info" type="button">
+                        <img class="footer-img-icon" src="static/assets/icon_google_map.png">
+                        Kunjungi kami di Google Maps
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="credits">
+                <div>
+                    © Copyright 2020. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html
