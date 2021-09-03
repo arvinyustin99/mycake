@@ -1,6 +1,7 @@
 import { News, ProductPreview } from 'types';
 
 export const backendURL = 'https://mycake-cms.herokuapp.com';
+export const appURL = 'http://localhost:3000';
 export const DEFAULT_LIMIT_PRODUCTS = 4;
 export const DEFAULT_LIMIT_NEWS = 6;
 

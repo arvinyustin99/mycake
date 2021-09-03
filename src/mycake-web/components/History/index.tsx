@@ -1,4 +1,5 @@
 import { History as HistoryProps} from "types";
+import ParagraphCard from 'components/ParagraphCard';
 
 interface Props {
     historyContent: HistoryProps;
@@ -21,7 +22,7 @@ const History = ( param: Props ) => {
                 <div className="col-12 col-lg-4 col-md-4">
                     <div className="row">
                         <p>
-                            { description && description !== '' ? description : tempContent }
+                            { description && description !== '' ? <ParagraphCard paragraph={description} /> : tempContent }
                         </p>
                     </div>
                 </div>

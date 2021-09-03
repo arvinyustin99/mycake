@@ -27,10 +27,10 @@ const HeaderFooter = (param: Props) => {
             <Navbar active={parent} />
             {children}
             <Footer
-                address={contactData ? contactData.address : ``}
-                telephone={contactData? contactData.telephone : ``}
-                timeOpened={contactData ?  contactData.open_hour : ``}
-                addressLink={contactData ? contactData.map_point : ``}
+                address={contactData.address}
+                telephone={contactData.telephone}
+                timeOpened={contactData.open_hour}
+                addressLink={contactData.map_point}
             />
         </div>
     );

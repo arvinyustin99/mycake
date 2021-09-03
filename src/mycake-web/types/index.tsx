@@ -10,7 +10,8 @@ export interface News {
     image_link: string;
     title: string;
     content: string;
-    published_at: Date;
+    published_at?: Date;
+    status?: string;
 }
 
 export interface History {

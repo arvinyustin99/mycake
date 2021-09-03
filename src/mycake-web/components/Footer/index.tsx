@@ -1,10 +1,11 @@
+import ParagraphCard from 'components/ParagraphCard';
 import Link from 'next/link';
 
 interface Props {
-    address: String;
-    telephone: String;
-    timeOpened: String;
-    addressLink: String;
+    address: string;
+    telephone: string;
+    timeOpened: string;
+    addressLink: string;
 }
 
 const Footer = (param: Props) => {
@@ -16,6 +17,15 @@ const Footer = (param: Props) => {
         Sabtu, Minggu:      09.00 - 16.00`,
         addressLink: 'https://goo.gl/maps/yoU81fTvx7ba4Qb4A'
     }
+    const paragraph: string[] =  timeOpened.split(/\r?\n/);
+    paragraph.forEach((element:string) => console.log(element));
+    const renderTimeOpened = paragraph.map((item: string, idx: number)=> {
+        return (
+            <>
+            {item}<br/>
+            </>
+        );
+    })
     return (
         <>
             <div id="contacts" />
@@ -39,7 +49,7 @@ const Footer = (param: Props) => {
                         <div className="footer-detail-item col-lg-4 col-md-4 col-sm-4 col-12">
                             <h3>Jam buka</h3>
                             <p>
-                                {timeOpened !== '' ? timeOpened : temp.timeOpened}
+                                {renderTimeOpened}
                             </p>
                         </div>
                     </div>

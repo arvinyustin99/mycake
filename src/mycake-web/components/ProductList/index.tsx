@@ -57,7 +57,7 @@ const ProductList = (param: Props) => {
                             <div className="row">
                                 <div className="col-12 title-container">
                                     <h2>Produk kami</h2>
-                                    <Link href={`/products`}>
+                                    <Link href={`/menu`}>
                                         <a>
                                             <p>See more</p>
                                         </a>

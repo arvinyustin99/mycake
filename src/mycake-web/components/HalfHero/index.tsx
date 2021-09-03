@@ -23,8 +23,7 @@ const HalfHero = (param: Props) => {
         else {
             return (
                 <div className="half-hero-title">
-                    <h1>Menu kami</h1>
-                    <h1>{title && title === '' ? title : ""}</h1>
+                    <h1>{title && title !== '' ? title : ""}</h1>
                 </div>
             );
         }

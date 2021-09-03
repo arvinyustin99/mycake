@@ -21,6 +21,7 @@ const Navbar = (param: Props) => {
     const { active } = param;
     const navbarList = [
         'homepage',
+        'history',
         'menu',
         'news'
     ]

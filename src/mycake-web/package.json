@@ -1,13 +1,13 @@
 {
-  "name": "kost-kartini-frontend",
-  "version": "0.1.0",
+  "name": "mycake-web",
+  "version": "1.0.1",
   "license": "unlicensed",
-  "author": "PT Matagi Informasi Pertiwi",
+  "author": "Arvin",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next build && next start"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@types/react-responsive": "^8.0.2",
@@ -17,6 +17,7 @@
     "eslint": "^7.3.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
+    "moment": "^2.29.1",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

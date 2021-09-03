@@ -473,6 +473,16 @@ p {
 }
 
 .blog-item-image {
+    margin-bottom: 20px;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-item-image-preview {
+    margin-bottom: 20px;
     position: relative;
     height: 200px;
     width: 100%;
@@ -502,9 +512,12 @@ p {
 }
 
 .blog-date {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
     font-weight: 900;
     color: #343434;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .blog-item-image img {
@@ -950,7 +963,7 @@ hr {
     }
 
     .blog-content-container {
-        margin-top: 250px;
+        margin-top: 72px;
     }
 
     .half-hero-background h1 {
@@ -984,8 +997,11 @@ hr {
     }
 
     .blog-item-image {
-        height: 140px;
+        height: 180px;
+    }
 
+    .blog-item-image-preview {
+        height: 140px;
     }
 
     .blog-item-image img {
@@ -1282,10 +1298,6 @@ hr {
 
     .blog-content {
         padding: 20px;
-    }
-
-    .blog-content-container {
-        margin-top: 280px;
     }
     
     .mobile-page {
